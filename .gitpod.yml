@@ -8,6 +8,12 @@ tasks:
     init: |
       python -m pip install --upgrade pip
       # Add commands to Setup Python Environment
+      # Install Python 3.12.0
+      pyenv install -v 3.12.0
+      # Set Python 3.12.0 as default
+      pyenv global 3.12.0
+      # Install all libraries
+      python -m pip install -r requirements.txt
     command: |
       clear
       echo "=============="
